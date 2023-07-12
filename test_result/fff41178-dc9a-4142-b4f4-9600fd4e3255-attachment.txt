@@ -1,0 +1,37 @@
+Method POST:
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"74cf0a0105ccf56e26f3c8ef654ccce6","scope":"APP","reference":"94f8d9c7cec7097a242b4687525225c194f8d9c7cec7097a242b4687525225c1","id":"94f8d9c7cec7097a242b4687525225c1"}
+Success, status code: 200
+Required fields: ['status', 'place_id', 'scope', 'reference', 'id'] received
+OK is true!
+Method GET:
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=74cf0a0105ccf56e26f3c8ef654ccce6
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Super Frontline house","phone_number":"34324 (+91) 983 893 3937","address":"32, Lenina street","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Success, status code: 200
+Required fields: ['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language'] received
+32, Lenina street is true!
+Method PUT:
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Success, status code: 200
+Required fields: ['msg'] received
+Address successfully updated is true!
+Method GET:
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=74cf0a0105ccf56e26f3c8ef654ccce6
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Super Frontline house","phone_number":"34324 (+91) 983 893 3937","address":"100 Lenina street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Success, status code: 200
+Required fields: ['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language'] received
+100 Lenina street, RU is true!
+Method DELETE:
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Success, status code: 200
+Required fields: ['status'] received
+OK is true!
+Method GET:
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=74cf0a0105ccf56e26f3c8ef654ccce6
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Success, status code: 404
+Required fields: ['msg'] received
+Get operation failed, looks like place_id  doesn't exists is true!
+Create, update and delete test is completed
